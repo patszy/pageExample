@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+/* The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px */
+:root {
+    --font-family: 'Karla', sans-serif;
+    --primary-cyan: hsl(179, 62%, 43%);
+    --primary-brightYellow: hsl(71, 73%, 54%);
+    --secondary-cyan: hsl(179, 62%, 50%);
+    --neutral-lightGray: hsl(204, 43%, 93%);
+    --neutral-grayishBlue: hsl(218, 22%, 67%);
+    --text-grey: hsl(0, 0%, 75%);
+    --text-lightGrey: hsl(0, 0%, 85%);
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: var(--font-family);
+    font-size: 16px;
+    background-color: var(--neutral-lightGray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 10px var(--neutral-grayishBlue);
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0 20%;
+}
+
+.card__wrapper > div{
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.offer__title {
+    color: var(--primary-cyan);
+    margin: 0 0 20px;
+}
+
+.offer__guarantee {
+    color: var(--primary-brightYellow);
+    font-weight: 700;
+}
+
+.offer__desc {
+    color: var(--text-grey);
+}
+
+.card__offer {
+    background-color: white;
+    flex-basis: 100%;
+}
+
+.card__link, .card__incentive {
+    box-sizing:border-box;
+    width: 50%;
+    color: white;
+}
+
+.card__link h2, .card__incentive h2 {
+    margin: 0;
+}
+
+.card__link {
+    background-color: var(--primary-cyan);
+}
+
+.card__link button {
+    background-color: var(--primary-brightYellow);
+    border: 0;
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.link__money {
+    font-size: 2rem;
+    margin: 25px 0 10px;
+}
+
+.link__money span {
+    font-size: .8rem;
+    opacity: .7;
+}
+
+.card__incentive {
+    background-color: var(--secondary-cyan);
+}
+
+.incentive__desc {
+    opacity: .7;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Mobile */
+@media all and (max-width: 375px) {
+    .card__link, .card__incentive {
+        box-sizing:border-box;
+        width: 100%;
+    }
+
+    .card__wrapper {
+        margin: 0;
+    }
+}
