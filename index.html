@@ -8,34 +8,36 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <main>
-        <div class="card__wrapper">
-            <div class="card__offer">
-                <h1 class="offer__title">Join our community</h1>
-                <p class="offer__guarantee">30-day, hassle-free money back guarantee</p>
-                <p class="offer__desc">Gain access to our full library of tutorials along with expert code reviews.
-                    <br>Perfect for any developers who are serious about honing their skills.</p>
+  <!-- It would be better to use a <figure> tag to describe self-contained content than main, article and header with sections. -->
+  <main>
+    <article class="card">
+      <header class="card__section card__section__join">
+        <h1>Join our community</h1>
+        <h2>30-day, hassle-free money back guarantee</h2>
+        <p>Gain access to our full library of tutorials along with expert code reviews. <br> Perfect for any developers who are serious about honing their skills.</p>
+      </header>
 
-            </div>
-            <div class="card__link">
-                <h2>Monthly Subscription</h2>
-                <p class="link__money">&dollar;29 <span>per month</span></p>
-                <p>Full access for less than &dollar;1 a day</p>
-                <button type="button">Sign Up</button>
-            </div>
-            <div class="card__incentive">
-                <h2>Why Us</h2>
-                <p class="incentive__desc">
-                    Tutorials by industry experts
-                    <br>Peer &amp; expert code review
-                    <br>Coding exercises
-                    <br>Access to our GitHub repos
-                    <br>Community forum
-                    <br>Flashcard decks
-                    <br>New videos every week</p>
-            </div>
-        </div>
-    </main>
+      <section class="card__section card__section__price">
+        <h2>Monthly Subscription</h2>
+        <p class="price"><span>&dollar;29</span> per month</p>
+        <p class="feature">Full access for less than &dollar;1 a day</p>
+        <button><a href="#">Sign Up</a></button>
+      </section>
+
+      <section class="card__section card__section__features">
+        <h2>Why Us</h2>
+        <ul class="incentive__desc">
+          <li>Tutorials by industry experts</li>
+          <li>Peer &amp; expert code review</li>
+          <li>Coding exercises</li>
+          <li>Access to our GitHub repos</li>
+          <li>Community forum</li>
+          <li>Flashcard decks</li>
+          <li>New videos every week</ul></li>
+      </section>
+    </article>
+  </main>
+
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
